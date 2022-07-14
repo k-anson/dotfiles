@@ -4,3 +4,6 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " Add the rest of your vim settings here
+set number " Add number lines
+
+let mapleader = " " " Map leader to Space
