@@ -4,3 +4,4 @@
 
 * Tmux
 * Vim
+* Neovim
