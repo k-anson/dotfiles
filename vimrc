@@ -1,9 +1,27 @@
-call plug#begin('~/.vim/plugged')
-" Add your vim plugins here like the following:
-" Plug 'tpope/vim-sensible'
+call plug#begin()
+" Git
+Plug 'kdheepak/lazygit.nvim'
+
+" Search/Find
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+" or                                , { 'branch': '0.1.x' }
 call plug#end()
 
-" Add the rest of your vim settings here
+" Remove trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
+
 set number " Add number lines
 
-let mapleader = " " " Map leader to Space
+" Map leader to Space
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+" LazyGit command-line sugar
+nnoremap <leader>gg :LazyGit<cr>
+
+" Find files using Telescope command-line sugar
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
