@@ -5,7 +5,7 @@ exec 2>&1
 set -x
 
 sudo apt-get update -y
-sudo apt-get install -y stow
+sudo apt-get install -y stow fzf
 
 BREW=/home/linuxbrew/.linuxbrew/bin/brew
 $BREW install neovim
