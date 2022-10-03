@@ -5,11 +5,9 @@ exec 2>&1
 set -x
 
 sudo apt-get update -y
-sudo apt-get install -y brew stow
+sudo apt-get install -y stow
 
-echo 'DEBUGGING'
-which brew
-brew install neovim lazygit
+/home/linuxbrew/.linuxbrew/bin/brew install neovim lazygit
 nvim --headless +PlugInstall
 
-stow --target=$HOME nvim vim tmux
+stow --target=$HOME nvim tmux vim
