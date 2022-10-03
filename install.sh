@@ -7,6 +7,8 @@ set -x
 sudo apt-get update -y
 sudo apt-get install -y stow
 
+echo 'DEBUGGING'
+which brew
 brew install neovim lazygit
 nvim --headless +PlugInstall
 
