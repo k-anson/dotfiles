@@ -7,7 +7,7 @@ set -x
 sudo apt-get update -y
 sudo apt-get install -y stow
 
-BREW = /home/linuxbrew/.linuxbrew/bin/brew
+BREW=/home/linuxbrew/.linuxbrew/bin/brew
 $BREW install neovim
 $BREW install lazygit
 
