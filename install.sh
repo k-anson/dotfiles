@@ -7,7 +7,10 @@ set -x
 sudo apt-get update -y
 sudo apt-get install -y stow
 
-/home/linuxbrew/.linuxbrew/bin/brew install neovim lazygit
+BREW = /home/linuxbrew/.linuxbrew/bin/brew
+$BREW install neovim
+$BREW install lazygit
+
 nvim --headless +PlugInstall
 
 stow --target=$HOME nvim tmux vim
