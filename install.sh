@@ -11,6 +11,6 @@ BREW=/home/linuxbrew/.linuxbrew/bin/brew
 $BREW install neovim
 $BREW install lazygit
 
-nvim --headless +PlugInstall
+/home/linuxbrew/.linuxbrew/bin/nvim --headless +PlugInstall
 
 stow --target=$HOME nvim tmux vim
