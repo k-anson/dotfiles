@@ -15,6 +15,8 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " CoC
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Andromeda
+Plug 'safv12/andromeda.vim'
 call plug#end()
 
 " Remove trailing spaces on save
@@ -34,3 +36,13 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" CoC
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+" Andromeda
+syntax on
+set background=dark
+colorscheme andromeda
