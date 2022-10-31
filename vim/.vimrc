@@ -16,7 +16,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Andromeda
-Plug 'safv12/andromeda.vim'
+"Plug 'safv12/andromeda.vim'
 call plug#end()
 
 " Remove trailing spaces on save
