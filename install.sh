@@ -13,4 +13,5 @@ $BREW install lazygit
 
 stow --target=$HOME nvim tmux vim
 
-/home/linuxbrew/.linuxbrew/bin/nvim --headless +PlugInstall
+# Line below causing some issues in Codespaces by keeping the "Installing Dotfiles" process open indefinitely
+# /home/linuxbrew/.linuxbrew/bin/nvim --headless +PlugInstall
