@@ -9,14 +9,15 @@ sudo apt-get update -y
 sudo apt-get install -y fzf
 
 # Install neovim
-curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz"
-tar xf nvim-linux64.tar.gz
-sudo install nvim-linux64/bin/nvim /usr/local/bin
+#curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz"
+#tar xf nvim-linux64.tar.gz
+#sudo install nvim-linux64/bin/nvim /usr/local/bin
 #sudo ln -s ./nvim-linux64/bin/nvim /usr/local/bin
-#curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-#chmod u+x nvim.appimage
-#./nvim.appimage --appimage-extract
-#./squashfs-root/AppRun --version
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage --appimage-extract
+./squashfs-root/AppRun --version
+ln -s ./squashfs-root/AppRun /usr/bin/nvim
 
 # Install lazygit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
