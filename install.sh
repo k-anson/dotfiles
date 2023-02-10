@@ -26,4 +26,4 @@ sudo install lazygit /usr/local/bin
 
 stow --target=$HOME nvim tmux vim
 
-usr/local/bin/nvim --headless +PlugInstall +qall
+nvim --headless +PlugInstall +qall
