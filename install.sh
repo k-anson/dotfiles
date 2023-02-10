@@ -9,9 +9,9 @@ sudo apt-get update -y
 sudo apt-get install -y fzf
 
 # Install neovim
-curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz"
-tar xf nvim-linux64.tar.gz
-sudo install nvim-linux64/bin/nvim /usr/local/bin
+curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb"
+#tar xf nvim-linux64.tar.gz
+sudo install nvim-linux64.deb
 #sudo ln -s ./nvim-linux64/bin/nvim /usr/local/bin
 #curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 #chmod u+x nvim.appimage
