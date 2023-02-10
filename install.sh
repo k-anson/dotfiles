@@ -11,7 +11,7 @@ sudo apt-get install -y fzf
 # Install neovim
 curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb"
 #tar xf nvim-linux64.tar.gz
-sudo apt install nvim-linux64.deb
+sudo apt install ./nvim-linux64.deb
 #sudo ln -s ./nvim-linux64/bin/nvim /usr/local/bin
 
 # Install lazygit
