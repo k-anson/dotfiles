@@ -22,8 +22,8 @@ sudo install lazygit /usr/local/bin
 
 #stow --target=$HOME nvim tmux vim
 mkdir -p ~/.config
-ln -s ${pwd}/nvim ~/.config/
-ln -s ${pwd}/tmux/.tmux.conf ~/.tmux.conf
-ln -s ${pwd}/vim/init.vim ~/init.vim
+ln -s $(pwd)/nvim ~/.config/
+ln -s $(pwd)/tmux/.tmux.conf ~/.tmux.conf
+ln -s $(pwd)/vim/init.vim ~/init.vim
 
 nvim --headless +PlugInstall +qall
