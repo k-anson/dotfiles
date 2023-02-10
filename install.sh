@@ -12,7 +12,7 @@ sudo apt-get install -y fzf
 curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz"
 tar xf nvim-linux64.tar.gz
 ls nvim-linux64
-sudo install nvim /usr/local/bin
+sudo install nvim-linux64 /usr/local/bin
 #sudo ln -s ./nvim-linux64/bin/nvim /usr/local/bin
 #curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 #chmod u+x nvim.appimage
