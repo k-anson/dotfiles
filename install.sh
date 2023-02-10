@@ -11,8 +11,7 @@ sudo apt-get install -y fzf
 # Install neovim
 curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz"
 tar xf nvim-linux64.tar.gz
-ls nvim-linux64
-sudo install nvim-linux64 /usr/local/bin
+sudo install nvim-linux64/bin/nvim /usr/local/bin
 #sudo ln -s ./nvim-linux64/bin/nvim /usr/local/bin
 #curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 #chmod u+x nvim.appimage
@@ -23,7 +22,6 @@ sudo install nvim-linux64 /usr/local/bin
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 tar xf lazygit.tar.gz lazygit
-ls lazygit
 sudo install lazygit /usr/local/bin
 
 stow --target=$HOME nvim tmux vim
