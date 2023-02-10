@@ -6,7 +6,7 @@ set -x
 
 # Update system and install base packages
 sudo apt-get update -y
-sudo apt-get install -y stow fzf lazygit
+sudo apt-get install -y stow fzf
 
 # Install neovim
 curl -Lo https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
