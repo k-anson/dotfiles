@@ -25,8 +25,8 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
 stow --target=$HOME nvim tmux vim
-sudo ln -s ${PWD}/config/nvim ~/.config/nvim
-sudo ln -s ${PWD}/config/tmux ~/tmux
-sudo ln -s ${PWD}/config/vim ~/vim
+ln -s ${PWD}/config/nvim ~/.config/nvim
+ln -s ${PWD}/config/tmux ~/tmux
+ln -s ${PWD}/config/vim ~/vim
 
 nvim --headless +PlugInstall +qall
