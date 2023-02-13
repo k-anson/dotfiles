@@ -6,16 +6,12 @@ endif
 
 " Install plugins
 call plug#begin()
-" Git
 Plug 'kdheepak/lazygit.nvim'
-" Search/Find
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " or                                , { 'branch': '0.1.x' }
-" CoC
-" Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Andromeda
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'safv12/andromeda.vim'
 call plug#end()
 
