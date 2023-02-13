@@ -5,8 +5,8 @@ exec 2>&1
 set -x
 
 # Update system and install base packages
-sudo apt-get update -y
-sudo apt-get install -y fzf
+sudo apt update -y
+sudo apt install -y fzf tmux
 
 # Install neovim
 curl -LO "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb"
@@ -18,9 +18,11 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
+# Symlink config files
 mkdir -p ~/.config
 ln -s $(pwd)/nvim ~/.config/
 ln -s $(pwd)/tmux/.tmux.conf ~/.tmux.conf
 ln -s $(pwd)/vim/.vimrc ~/.vimrc
 
+# Install nvim plugins
 nvim --headless +PlugInstall +qall
