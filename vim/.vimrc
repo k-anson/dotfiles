@@ -18,7 +18,11 @@ call plug#end()
 " Remove trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-set number " Add number lines
+" Add number lines
+set number
+
+" Enable Matchit
+runtime macros/matchit.vim
 
 " Map leader to Space
 nnoremap <SPACE> <Nop>
