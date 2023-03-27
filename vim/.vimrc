@@ -21,6 +21,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Add number lines
 set number
 
+" Set tab size to 2
+set tabstop = 2
+
 " Enable Matchit
 runtime macros/matchit.vim
 
