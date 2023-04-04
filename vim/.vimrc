@@ -21,8 +21,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Add number lines
 set number
 
-" Set tab size to 2
-set tabstop = 2
+" Use spaces for tab indents
+" Set indent width to 2 spaces
+set shiftwidth=2 smarttab
+set expandtab
 
 " Enable Matchit
 runtime macros/matchit.vim
