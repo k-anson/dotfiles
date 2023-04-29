@@ -20,9 +20,9 @@ sudo install lazygit /usr/local/bin
 
 # Symlink config files
 mkdir -p ~/.config
-ln -s $(pwd)/nvim ~/.config/
-ln -s $(pwd)/tmux/.tmux.conf ~/.tmux.conf
-ln -s $(pwd)/vim/.vimrc ~/.vimrc
+ln -sf $(pwd)/nvim ~/.config/
+ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
+ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 
 # Install nvim plugins
 nvim --headless +PlugInstall +qall
