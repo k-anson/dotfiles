@@ -28,3 +28,7 @@ ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 
 # Install nvim plugins
 nvim --headless +PlugInstall +qall
+
+# Install CoC extensions
+nvim --headless +'CocInstall -sync coc-solargraph coc-go coc-tsserver' +qall
+nvim --headless +CocUpdateSync +qall
