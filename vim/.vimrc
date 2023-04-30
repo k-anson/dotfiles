@@ -12,6 +12,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " or                                , { 'branch': '0.1.x' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'm4xshen/autoclose.nvim'
 Plug 'safv12/andromeda.vim'
 call plug#end()
 
