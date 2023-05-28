@@ -10,7 +10,8 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " or                                , { 'branch': '0.1.x' }
-Plug 'preservim/nerdtree'
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'm4xshen/autoclose.nvim'
@@ -44,8 +45,8 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-" NERDTree
-nnoremap <C-t> :NERDTreeToggle<CR>
+" Nvim Tree
+nnoremap <C-t> :NvimTreeToggle<CR>
 
 " CoC
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
