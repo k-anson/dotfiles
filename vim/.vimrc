@@ -15,7 +15,8 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'm4xshen/autoclose.nvim'
-Plug 'safv12/andromeda.vim'
+" Plug 'safv12/andromeda.vim'
+Plug 'folke/tokyonight.nvim'
 call plug#end()
 
 " Remove trailing spaces on save
@@ -56,5 +57,5 @@ nmap <leader>qf <Plug>(coc-fix-current)
 
 " Andromeda
 syntax on
-set background=dark
-colorscheme andromeda
+" set background=dark
+colorscheme tokyonight
