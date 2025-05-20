@@ -9,10 +9,10 @@ sudo apt-get update -y
 sudo apt-get --assume-yes install fzf tmux
 
 # Install neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/dowload/nvim-linux64.tar.gz
+curl -LO https://github.com/neovim/neovim/releases/latest/dowload/nvim-linux-x86_64.tar.gz
 sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-rm ./nvim-linux64.deb
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+rm ./nvim-linux-x86_64.deb
 
 # Install lazygit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
