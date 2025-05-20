@@ -58,4 +58,7 @@ nmap <leader>qf <Plug>(coc-fix-current)
 " Andromeda
 syntax on
 " set background=dark
-colorscheme tokyonight
+try
+  colorscheme tokyonight
+catch
+endtry
