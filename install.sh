@@ -29,8 +29,8 @@ ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
 ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 
 # Install nvim plugins
-nvim --headless +PlugInstall +qall
+nvim --headless +PlugInstall +qa
 
 # Install CoC extensions
-nvim --headless +'CocInstall -sync coc-solargraph coc-go coc-tsserver' +qall
-nvim --headless +CocUpdateSync +qall
+nvim --headless +'CocInstall -sync coc-solargraph coc-go coc-tsserver' +qa
+nvim --headless +CocUpdateSync +qa
