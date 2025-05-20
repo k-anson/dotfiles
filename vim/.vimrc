@@ -8,7 +8,7 @@ endif
 call plug#begin()
 Plug 'kdheepak/lazygit.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 " or                                , { 'branch': '0.1.x' }
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
