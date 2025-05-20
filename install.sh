@@ -9,6 +9,8 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get --assume-yes install fzf tmux
 
 # Install neovim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
 sudo apt-get install neovim -y
 #curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 #sudo rm -rf /opt/nvim
