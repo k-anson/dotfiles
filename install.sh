@@ -5,7 +5,7 @@ exec 2>&1
 set -x
 
 # Update system and install base packages
-sudo apt-get update -y
+sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get --assume-yes install fzf tmux
 
 # Install neovim
